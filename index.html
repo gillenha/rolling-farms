@@ -44,14 +44,40 @@
 
 	<!-- Welcome page -->
 <div id="home" class="welcome-section">
-	<img class="welcome-image animated fadeIn" src="images/omelette.jpg" />
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img class="d-block w-100" src="images/omelette.jpg" alt="First slide">
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block w-100" src="images/lunch.jpg" alt="Second slide">
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block w-100" src="images/sandwich4.jpg" alt="Third slide">
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+	<!-- <img class="welcome-image animated fadeIn" src="images/omelette.jpg" /> -->
 	<div class="welcome-text">
 		<p class="animated fadeInDown">Rolling Farms Cafe</p>
 		<button class="btn btn-primary animated fadeInUp" onclick="location.href='https://www.dropbox.com/s/bdjqdisommkomm1/rolling-farms-menu.pdf?dl=0'" target="_blank">See Our Menu</button>
+		<div class="animated fadeInUp sub-text">
+			<p>Open Monday - Saturday</p>
+			<p>8:00am - 3:00pm</p>
+			<p>(231) 421-5711</p>
+		</div>
 	</div>
 </div>
 
-	<!-- Menu items section -->
+<!-- Menu items section -->
 <div id="menu" class="container-fluid padding">
 	<div class="row menu-section text-center">
 		<div class="col-12">
@@ -209,6 +235,8 @@
 <div class="row text-center">
 	<div class="col-md-4">
 		<hr class="light">
+			<h5>Contact</h5>
+		<hr class="light">
 			<p>231-421-5711</p>
 			<p>rollingfarmscafe@gmail.com</p>
 			<p>4000 Eastern Sky Dr # 4</p>
@@ -216,15 +244,15 @@
 	</div>
 	<div class="col-md-4">
 		<hr class="light">
-		<h5>Our hours</h5>
-		<br>
-		<h4>Monday - Saturday: 8am - 3pm</h4>
-		<p>Sundays: Closed</p>
+			<h5>Hours</h5>
+		<hr class="light">
+			<h4>Monday - Saturday: 8am - 3pm</h4>
+			<p>Sundays: Closed</p>
 	</div>
 	<div class="col-md-4">
 		<hr class="light">
-		<h5>Like Us on Facebook</h5>
-		<!-- <hr class="light"> -->
+			<h5>Like Us on Facebook</h5>
+		<hr class="light">
 		<a href="https://www.facebook.com/pages/Rolling-Farms-Cafe/151358164901990"><i class="fab fa-facebook fa-3x"></i></a>
 	</div>	
 	<div class="col-12">

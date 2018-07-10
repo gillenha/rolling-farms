@@ -31,7 +31,6 @@ hr {
 /*WELCOME*/
 div.welcome-section {
 	margin: 0;
-	/*padding-top: 120px;*/
 	position: relative;
 	text-align: center;
 	color: white;
@@ -39,7 +38,6 @@ div.welcome-section {
 
 img.welcome-image {
 	width: 100%;
-	/*height: 900px;*/
 }
 
 .welcome-text {
@@ -49,6 +47,11 @@ img.welcome-image {
 	transform: translate(-50%, -50%);
 	font-size: 5vw;
   text-shadow: 2px 2px 8px black;
+}
+
+.sub-text p {
+	font-size: 2vw;
+	margin: 0;
 }
 
 .btn-primary {
@@ -129,7 +132,7 @@ img.welcome-image {
 
 .about-img-top {
 	width: 200px;
-	border-radius: 50%;
+	border-radius: 25px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -181,18 +184,24 @@ hr.light-100 {
 
 } 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 441px) {
 	.welcome-text {
-		font-size: 90px;
+		font-size: 30px;
+		padding-top: 30px;
 	}
 
 	.nav-item a {
-	font-size: 40px;
-	margin: 0 auto;
-}
+		font-size: 20px;
+		margin: 0 auto;
+	}
 
 	.btn {
-		font-size: 50px;
+		display: none;
+	}
+
+	.sub-text p {
+		font-size: 15px;
+		margin: 0;
 	}
 
 } 

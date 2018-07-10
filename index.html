@@ -30,29 +30,29 @@
 	<div class="collapse navbar-collapse" id="navbar-menu">
 		<ul class="navbar-nav">
 			<li class="nav-item">
-				<a href="#Home" class="nav-link">Home</a>
+				<a href="#home" class="nav-link">Home</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">Menu</a>
+				<a href="#menu" class="nav-link">Menu</a>
 			</li>
 			<li class="nav-item">
-				<a href="#" class="nav-link">Contact</a>
+				<a href="#contact" class="nav-link">Contact</a>
 			</li>
 		</ul>
 	</div>
 </nav>
 
 	<!-- Welcome page -->
-<div class="welcome-section">
+<div id="home" class="welcome-section">
 	<img class="welcome-image animated fadeIn" src="images/omelette.jpg" />
 	<div class="welcome-text">
 		<p class="animated fadeInDown">Rolling Farms Cafe</p>
-		<button class="btn btn-primary animated fadeInUp">See Our Menu</button>
+		<button class="btn btn-primary animated fadeInUp" onclick="location.href='https://www.dropbox.com/s/bdjqdisommkomm1/rolling-farms-menu.pdf?dl=0'" target="_blank">See Our Menu</button>
 	</div>
 </div>
 
 	<!-- Menu items section -->
-<div class="container-fluid padding">
+<div id="menu" class="container-fluid padding">
 <div class="row welcome text-center">
 	<div class="col-12">
 		<h1 class="display-4">Menu Items</h1>
@@ -67,12 +67,12 @@
 			<img class="menu-item" src="images/breakfast.jpg">
 			<img class="menu-item" src="images/salad1.jpg">
 			<img class="menu-item" src="images/omelette2.jpg">
-<!-- 			<img class="menu-item" src="images/eggs1.jpg">
+			<img class="menu-item" src="images/eggs1.jpg">
 			<img class="menu-item" src="images/carrots.jpg">
-			<img class="menu-item" src="images/bakery.jpg"> -->
+			<img class="menu-item" src="images/bakery.jpg">
 		</div>
 	</div>
-<!-- 	<div class="row">
+	<div class="row">
 		<div class="column">
 			<img class="menu-item" src="images/icecream.jpg">
 			<img class="menu-item" src="images/coffee.jpg">
@@ -91,13 +91,40 @@
 			<img class="menu-item" src="images/sandwich3.jpg">
 			<img class="menu-item" src="images/farm1.jpg">
 		</div>
-	</div> -->
+	</div>
 </div>
 
 	<!-- Contact page -->
-	<div>
-		
+<footer id="contact">
+<div class="container-fluid padding">
+<div class="row text-center">
+	<div class="col-md-4">
+		<hr class="light">
+		<p>231-421-5711</p>
+		<p>rollingfarmscafe@gmail.com</p>
+		<p>4000 Eastern Sky Dr # 4</p>
+		<p>Traverse City, MI 49684</p>
 	</div>
+	<div class="col-md-4">
+		<hr class="light">
+		<h5>Our hours</h5>
+		<br>
+		<h4>Monday - Saturday: 8am - 3pm</h4>
+		<p>Sundays: Closed</p>
+	</div>
+	<div class="col-md-4">
+		<hr class="light">
+		<h5>Like Us on Facebook</h5>
+		<!-- <hr class="light"> -->
+		<a href="https://www.facebook.com/pages/Rolling-Farms-Cafe/151358164901990"><i class="fab fa-facebook fa-3x"></i></a>
+	</div>	
+	<div class="col-12">
+		<hr class="light-100">
+		<h5>&copy; website created by <a href="harrygillen.herokuapp.com" style="text-decoration: underline">Harry Gillen</a></h5>
+	</div>
+</div>
+</div>
+</footer>
 
 	<!-- JS, Popper.js, and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

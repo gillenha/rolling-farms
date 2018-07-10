@@ -73,11 +73,42 @@ img.welcome-image {
 }
 
 .menu-item {
+	position: relative;
+	width: 200px;
+	height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item img{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 150px;
+}
+
+.menu-item span{
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  font-size: 30px;
+  font-weight: bold;
+  color:white;
+  text-shadow: 2px 2px 8px black;
+}
+
+/*.menu-item {
 	 width: 200px; 
 	 border-radius: 50%;
 	 transition: transform .2s;
-	 /*align-items: center;*/
-}
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}*/
 
 .menu-item:hover {
 	transform: scale(1.05);
@@ -98,7 +129,7 @@ img.welcome-image {
 .about-img-top {
 	width: 200px;
 	border-radius: 50%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-title, .card-text, hr {

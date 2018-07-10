@@ -72,7 +72,8 @@ img.welcome-image {
 	padding-top: 2rem;
 }
 
-.menu-item {
+/*JS fiddle from Discord User*/
+/*.menu-item {
 	position: relative;
 	width: 200px;
 	height: 200px;
@@ -101,14 +102,14 @@ img.welcome-image {
   font-weight: bold;
   color:white;
   text-shadow: 2px 2px 8px black;
-}
+}*/
 
-/*.menu-item {
+.menu-item {
 	 width: 200px; 
 	 border-radius: 50%;
 	 transition: transform .2s;
 	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}*/
+}
 
 .menu-item:hover {
 	transform: scale(1.05);

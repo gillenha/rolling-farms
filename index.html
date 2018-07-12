@@ -7,13 +7,11 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
 	<!-- Animate CSS -->
-	<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
-  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+  <!-- Google Maps API -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrjB7lUdL6GAkQKkTQ3FH2zTs5hBujJRw&callback=initMap"async defer></script>
 	<!-- Default CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
@@ -229,11 +227,84 @@
 </div>
 </div>
 
-	<!-- Contact section -->
+<!-- Google Maps section -->
+<div id="map" class="map-section">My map will go here</div>
+
+<!-- Contact Form Section -->
+<div id="contact" class="container-fluid padding">
+	<div class="row menu-section text-center">
+		<div class="col-12">
+			<h1 class="display-7">We'd Love to Hear From You!</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+  <div class="form-container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <form id="contact-form" method="post" action="contact.php" role="form">
+        <div class="messages"></div>
+        <div class="controls">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_name">First Name *</label>
+                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname*" required="required" data-error="Firstname is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_lastname">Last Name *</label>
+                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname*" required="required" data-error="Lastname is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_email">Email *</label>
+                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email*" required="required" data-error="Valid email is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="form_phone">Phone</label>
+                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="form_message">Message *</label>
+                <textarea id="form_message" name="message" class="form-control" placeholder="Message you'd like to send to Rolling Farms*" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-12 text-center">
+              <input type="submit" class="btn btn-primary btn-send" value="Send message">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p class="text-muted"><strong>*</strong> These fields are required</p>
+            </div>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- Footer -->
 <footer id="contact">
 <div class="container-fluid padding">
 <div class="row text-center">
-	<div class="col-md-4">
+	<div class="col-md-4 contact-text">
 		<hr class="light">
 			<h5>Contact</h5>
 		<hr class="light">
@@ -242,20 +313,20 @@
 			<p>4000 Eastern Sky Dr # 4</p>
 			<p>Traverse City, MI 49684</p>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 contact-text">
 		<hr class="light">
 			<h5>Hours</h5>
 		<hr class="light">
 			<h4>Monday - Saturday: 8am - 3pm</h4>
 			<p>Sundays: Closed</p>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 contact-text">
 		<hr class="light">
 			<h5>Like Us on Facebook</h5>
 		<hr class="light">
 		<a href="https://www.facebook.com/pages/Rolling-Farms-Cafe/151358164901990"><i class="fab fa-facebook fa-3x"></i></a>
 	</div>	
-	<div class="col-12">
+	<div class="col-12 contact-text">
 		<hr class="light-100">
 		<h5>&copy; website created by <a href="harrygillen.herokuapp.com" style="text-decoration: underline">Harry Gillen</a></h5>
 	</div>
@@ -264,9 +335,11 @@
 </footer>
 
 	<!-- JS, Popper.js, and jQuery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<!-- Bootstrap Validator -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"> -->
 	<!-- call Javascript -->
 	<script type="text/javascript" src="script.js"></script>
 </body>
